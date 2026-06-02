@@ -41,11 +41,6 @@ conda env create -f environment.yml
 conda activate streamlit
 ```
 
-If you prefer `pip`, install the listed packages from `environment.yml`:
-
-```bash
-pip install streamlit plotly python-dotenv google-cloud-bigquery db-dtypes pandas
-```
 
 ### 2. Create `app.py`
 
