@@ -1,6 +1,6 @@
 # Streamlit GCP Demo
 
-A simple Streamlit dashboard for Singapore HDB resale data, refactored to support a BigQuery backend.
+A simple Streamlit dashboard for Singapore HDB resale data, refactored to support a BigQuery backend. This is a refactor code from the repository https://github.com/thinkdaniel/streamlit-lesson
 
 This repository contains:
 
@@ -67,6 +67,7 @@ token_uri = "https://oauth2.googleapis.com/token"
 auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
 client_x509_cert_url = "..."
 ```
+Please open your service account json file and file in the variables field by field.
 
 > Do not commit secret credentials to version control.
 
@@ -141,13 +142,16 @@ streamlit run app.py
 
 Open the local URL shown in the terminal.
 
----
-
-## Notes
+### Notes
 
 - The current repository does not include `app.py` yet; `app_original.py` is the base source.
-- If you want to run locally without BigQuery, keep `app_original.py` and use a local CSV data file at `./data/resale_data.csv`.
 - Make sure the BigQuery dataset and table used in the query exist and are accessible with the provided service account.
+
+---
+
+## Deploy to Streamlit Cloud
+
+To deploy to Streamlit Cloud, you need to copy the content in `.streamlit/secrets.toml` to the secrets in Streamlit app setting. 
 
 ---
 
