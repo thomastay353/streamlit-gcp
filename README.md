@@ -151,7 +151,17 @@ Open the local URL shown in the terminal.
 
 ## Deploy to Streamlit Cloud
 
-To deploy to Streamlit Cloud, you need to copy the content in `.streamlit/secrets.toml` to the secrets in Streamlit app setting. 
+To deploy to Streamlit Cloud, you can deploy as per usual but you need to add secrets to the app. 
+
+During the Streamlit app setup, select advance settings
+
+![alt text](assets/st0.PNG)
+
+Make sure version is the same as your version in the environment.yml. Then copy the content in `.streamlit/secrets.toml` to the secrets.
+
+![alt text](assets/st1.PNG)
+
+Click `Save` and `Deploy`
 
 ---
 
